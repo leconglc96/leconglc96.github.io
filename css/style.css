@@ -552,10 +552,12 @@ a:hover {
 
 .work-img img {
   transition: all 1s;
+  width: 100%;
 }
 
 .work-content {
   padding: 2rem 3% 1rem 4%;
+  background: #ddd;
 }
 
 .work-content .w-more {

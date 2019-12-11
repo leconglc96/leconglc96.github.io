@@ -31,14 +31,6 @@
     return false;
   });
 
-	/*--/ Star ScrollTop /--*/
-	$('.scrolltop-mf').on("click", function () {
-		$('html, body').animate({
-			scrollTop: 0
-		}, 1000);
-	});
-
-
 	/*--/ Star Scrolling nav /--*/
 	$('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -76,11 +68,6 @@
 		} else {
 			$('.navbar-expand-md').addClass('navbar-trans');
 			$('.navbar-expand-md').removeClass('navbar-reduce');
-		}
-		if ($(window).scrollTop() > top) {
-			$('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");
-		} else {
-			$('.scrolltop-mf').fadeOut(1000, "easeInOutExpo");
 		}
 	});
 
